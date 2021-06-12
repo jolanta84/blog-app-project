@@ -6,6 +6,7 @@ import { PostListComponent } from './post-list/post-list.component';
 export const postRoutes: Routes = [
   { path: 'posts', component: PostListComponent },
   { path: 'posts/form', component: PostFormComponent },
-  { path: '**', component: PageNotFoundComponent },
-  //   { path: 'sandwiches/:sandwichId', component: SandwichDetailsComponent }
+  { path: 'posts/edit/:id', component: PostFormComponent},
+  { path: '**', component: PageNotFoundComponent }
+
 ];
