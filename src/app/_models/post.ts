@@ -1,5 +1,5 @@
-export class Post {
-  id!: string;
-  title!: string;
-  text!: string;
+export interface Post {
+  id: string;
+  title: string;
+  text: string;
 }
