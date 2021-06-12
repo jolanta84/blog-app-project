@@ -1,0 +1,27 @@
+<h1>Posts</h1>
+<a routerLink="add" class="btn btn-sm btn-success mb-2">Create</a>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th style="width: 30%">Title</th>
+            <th style="width: 70%">Content</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let post of posts">
+          <td>{{post.title}}</td>
+          <td>{{post.text}}</td>
+          <td style="white-space: nowrap">
+              <a routerLink="edit/{{post.id}}" class="btn btn-sm btn-primary mr-1">Edit</a>
+              <button (click)="deletePost(post.id)" class="btn btn-sm btn-danger btn-delete-post" >
+                Delete
+              </button>
+          </td>
+      </tr>
+      <tr *ngIf="!posts">
+          <td colspan="4" class="text-center">
+              <span class="spinner-border spinner-border-lg align-center"></span>
+          </td>
+      </tr>
+  </tbody>
+</table>
