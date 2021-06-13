@@ -1,9 +1,9 @@
 {
   "posts": [
     {
-      "id": 1,
       "title": "Post numer 1",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores nulla laboriosam iste ducimus autem tenetur soluta voluptatibus iure cupiditate, quibusdam dolorum iusto sequi veritatis numquam, nobis, possimus vero expedita! Fuga?"
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores nulla laboriosam iste ducimus autem tenetur soluta voluptatibus iure cupiditate, quibusdam dolorum iusto sequi veritatis numquam, nobis, possimus vero expedita! Fuga?",
+      "id": 1
     },
     {
       "id": 2,

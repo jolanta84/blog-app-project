@@ -25,55 +25,56 @@ export class PostFormComponent implements OnInit {
       private postService: PostService
   ) {}
 
+
   ngOnInit() {
-      this.id = this.route.snapshot.params['id'];
-      this.isAddMode = !this.id;
+    this.id = this.route.snapshot.params['id'];
+    this.isAddMode = !this.id;
 
-      this.form = this.formBuilder.group({
-          title: ['', Validators.required],
-          content: ['', Validators.required]
-      });
+    this.form = this.formBuilder.group({
+        title: ['', Validators.required],
+        text: ['', Validators.required]
+    });
 
-      if (!this.isAddMode) {
-          this.postService.getById(this.id)
-              .pipe(first())
-              .subscribe(x => this.form.patchValue(x));
-      }
-  }
+    if (!this.isAddMode) {
+        this.postService.getById(this.id)
+            .pipe(first())
+            .subscribe(x => this.form.patchValue(x));
+    }
+}
 
-  get f() { return this.form.controls; }
+get f() { return this.form.controls; }
 
-  onSubmit() {
-      this.submitted = true;
+onSubmit() {
+    this.submitted = true;
 
-      if (this.form.invalid) {
-          return;
-      }
+    if (this.form.invalid) {
+        return;
+    }
 
-      this.loading = true;
+    this.loading = true;
 
-      if (this.isAddMode) {
-          this.createPost();
-      } else {
-          this.updatePost();
-      }
-  }
+    if (this.isAddMode) {
+        this.createPost();
+    } else {
+        this.updatePost();
+    }
+}
 
-  private createPost() {
-      this.postService.create(this.form.value)
-          .pipe(first())
-          .subscribe(() => {
-              this.router.navigate(['../'], { relativeTo: this.route });
-          })
-          .add(() => this.loading = false);
-  }
+private createPost() {
+    this.postService.create(this.form.value)
+        .pipe(first())
+        .subscribe(() => {
+            this.router.navigate(['../'], { relativeTo: this.route });
+        })
+        .add(() => this.loading = false);
+}
 
-  private updatePost() {
-      this.postService.update(this.id, this.form.value)
-          .pipe(first())
-          .subscribe(() => {
-              this.router.navigate(['../../'], { relativeTo: this.route });
-          })
-          .add(() => this.loading = false);
-  }
+private updatePost() {
+    this.postService.update(this.id, this.form.value)
+        .pipe(first())
+        .subscribe(() => {
+            this.router.navigate(['../../'], { relativeTo: this.route });
+        })
+        .add(() => this.loading = false);
+}
 }

@@ -1,6 +1,48 @@
-.navbar-custom {
-  background-color:#286ea7!important;
+* {
+  margin: 0px;
+  padding: 0px;
+ font: 'Nunito', sans-serif;
 }
-.nav-link, .navbar-brand {
-  color:#ddd;
+.menu-bar {
+  background-image: linear-gradient(-90deg, #e02222, #125fd3);
+
+}
+
+.nav-link {
+  font-size: 16px;
+  margin: 3px;
+  color: #fff!important;
+  font-weight:500;
+}
+
+.navbar-nav {
+  text-align: right;
+  margin-right: 20px;
+}
+.menu-bar .navbar-toggler {
+  padding-right: 20px;
+  outline: none!important;
+  border: none!important;
+
+}
+
+.navbar-brand {
+  font-size:40px;
+  margin-left:20px;
+}
+
+.navbar .fa {
+  color: #fff!important;
+  font-size: 26px;
+}
+
+.nav-link:hover {
+  font-weight: 600;
+  border-bottom: 1px solid #fff;
+}
+
+@media only screen and (max-width: 1000px) {
+  .nav-link:hover {
+    border-bottom: none!important;
+  }
 }

@@ -1,26 +1,43 @@
 <h1>Post List</h1>
+<div class="table-responsive">
 <table class="table table-striped">
-    <thead>
-        <tr>
-            <th >Title</th>
-            <th>Text</th>
-        </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let post of posts">
-          <td>{{post.title}}</td>
-          <td>{{post.text}}</td>
-          <td style="white-space: nowrap">
-              <a routerLink="edit/{{post.id}}" class="btn btn-sm btn-primary mr-3"><span class="iconify" data-icon="octicon:pencil" data-inline="false"></span> Edit</a>
-              <button (click)="deletePost(post.id)" class="btn btn-sm btn-danger btn-delete-post mx-3" >
-                <span class="iconify" data-icon="octicon-trashcan" data-inline="false"></span> Delete
-              </button>
-          </td>
-      </tr>
-      <tr *ngIf="!posts">
-          <td colspan="4" class="text-center">
-              <span class="spinner-border spinner-border-lg align-center"></span>
-          </td>
-      </tr>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Text</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let post of posts">
+      <td>{{ post.title }}</td>
+      <td>{{ post.text }}</td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/{{ post.id }}" class="btn btn-sm btn-primary mr-3"
+          ><span
+            class="iconify"
+            data-icon="octicon:pencil"
+            data-inline="false"
+          ></span>
+          Edit</a
+        >
+        <button
+          (click)="deletePost(post.id)"
+          class="btn btn-sm btn-danger btn-delete-post mx-3"
+        >
+          <span
+            class="iconify"
+            data-icon="octicon-trashcan"
+            data-inline="false"
+          ></span>
+          Delete
+        </button>
+      </td>
+    </tr>
+    <tr *ngIf="!posts">
+      <td colspan="4" class="text-center">
+        <span class="spinner-border spinner-border-lg align-center"></span>
+      </td>
+    </tr>
   </tbody>
 </table>
+</div>
