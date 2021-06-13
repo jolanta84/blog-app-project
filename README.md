@@ -1,4 +1,4 @@
-# Blog posts appliaction
+# Blog posts application
 
 ## Table of contents
 * [Project description](#project-description)
