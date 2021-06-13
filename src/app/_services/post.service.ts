@@ -1,32 +1,32 @@
-import { Injectable } from '@angular/core';
-
 import { HttpClient } from '@angular/common/http';
 import { Post } from '../_models/post';
+import { Injectable } from '@angular/core';
 
-const url = 'http://localhost:3000/posts';
-
-@Injectable({ providedIn: 'root' })
-
+@Injectable({
+  providedIn: 'root',
+})
 export class PostService {
-    constructor(private http: HttpClient) { }
+  private url: string = 'http://localhost:3000/posts';
 
-    getAll() {
-        return this.http.get<Post[]>(url);
-    }
+  constructor(private http: HttpClient) {}
 
-    getById(id: string) {
-        return this.http.get<Post>(`${url}/${id}`);
-    }
+  public getAll() {
+    return this.http.get<Post[]>(this.url);
+  }
 
-    create(params: any) {
-        return this.http.post(url, params);
-    }
+  public getById(id: string) {
+    return this.http.get<Post>(`${this.url}/${id}`);
+  }
 
-    update(id: string, params: any) {
-        return this.http.put(`${url}/${id}`, params);
-    }
+  public create(params: any) {
+    return this.http.post(this.url, params);
+  }
 
-    delete(id: string) {
-        return this.http.delete(`${url}/${id}`);
-    }
+  public update(id: string, params: any) {
+    return this.http.put(`${this.url}/${id}`, params);
+  }
+
+  public delete(id: string) {
+    return this.http.delete(`${this.url}/${id}`);
+  }
 }

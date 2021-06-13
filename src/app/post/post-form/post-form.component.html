@@ -1,3 +1,4 @@
+<div class="p-4">
 <h1 *ngIf="isAddMode">Create Post</h1>
 <h1 *ngIf="!isAddMode">Edit Post</h1>
 <form [formGroup]="form" (ngSubmit)="onSubmit()">
@@ -40,3 +41,4 @@
     <button routerLink="/posts" class="btn btn-danger">Cancel</button>
   </div>
 </form>
+</div>

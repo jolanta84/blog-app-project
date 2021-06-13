@@ -13,7 +13,7 @@ import { PostListComponent } from './post-list/post-list.component';
     CommonModule,
     ReactiveFormsModule,
     HttpClientModule,
-    RouterModule.forChild(postRoutes)
+    RouterModule.forChild(postRoutes),
   ],
   exports: [PostFormComponent, PostListComponent],
 })

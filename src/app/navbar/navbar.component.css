@@ -1,18 +1,17 @@
 * {
   margin: 0px;
   padding: 0px;
- font: 'Nunito', sans-serif;
+  font: "Nunito", sans-serif;
 }
 .menu-bar {
   background-image: linear-gradient(-90deg, #e02222, #125fd3);
-
 }
 
 .nav-link {
   font-size: 16px;
   margin: 3px;
-  color: #fff!important;
-  font-weight:500;
+  color: #fff !important;
+  font-weight: 500;
 }
 
 .navbar-nav {
@@ -21,18 +20,17 @@
 }
 .menu-bar .navbar-toggler {
   padding-right: 20px;
-  outline: none!important;
-  border: none!important;
-
+  outline: none !important;
+  border: none !important;
 }
 
 .navbar-brand {
-  font-size:40px;
-  margin-left:20px;
+  font-size: 40px;
+  margin-left: 20px;
 }
 
 .navbar .fa {
-  color: #fff!important;
+  color: #fff !important;
   font-size: 26px;
 }
 
@@ -43,6 +41,6 @@
 
 @media only screen and (max-width: 1000px) {
   .nav-link:hover {
-    border-bottom: none!important;
+    border-bottom: none !important;
   }
 }
