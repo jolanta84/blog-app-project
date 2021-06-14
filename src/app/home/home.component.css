@@ -1,5 +1,5 @@
-.blog-image {
-  background-image: url(E:\projekt_wsb\blog-app\src\assets\img\home-bg.jpg);
+.blog-image { 
+  background-image: url('/.././assets/img/home-bg.jpg');
   height: 500px;
   background-position: center;
   background-repeat: no-repeat;
