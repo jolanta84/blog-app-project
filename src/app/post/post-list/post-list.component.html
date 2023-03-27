@@ -1,43 +1,54 @@
-<h1>Post List</h1>
-<div class="table-responsive">
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Text</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let post of posts">
-      <td>{{ post.title }}</td>
-      <td>{{ post.text }}</td>
-      <td style="white-space: nowrap">
-        <a routerLink="edit/{{ post.id }}" class="btn btn-sm btn-primary mr-3"
-          ><span
-            class="iconify"
-            data-icon="octicon:pencil"
-            data-inline="false"
-          ></span>
-          Edit</a
+<div class="container text-center mb-5">
+  <h1>Angular interview questions</h1>
+  <div class="pagination justify-content-center">
+    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+  </div>
+  <div class="table-responsive mt-2">
+    <table class="table table-striped text-center">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Text</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          *ngFor="
+            let post of posts | paginate : { itemsPerPage: 5, currentPage: p }
+          "
         >
-        <button
-          (click)="deletePost(post.id)"
-          class="btn btn-sm btn-danger btn-delete-post mx-3"
-        >
-          <span
-            class="iconify"
-            data-icon="octicon-trashcan"
-            data-inline="false"
-          ></span>
-          Delete
-        </button>
-      </td>
-    </tr>
-    <tr *ngIf="!posts">
-      <td colspan="4" class="text-center">
-        <span class="spinner-border spinner-border-lg align-center"></span>
-      </td>
-    </tr>
-  </tbody>
-</table>
+          <td>{{ post.title }}</td>
+          <td>{{ post.text }}</td>
+          <td style="white-space: nowrap">
+            <div class="buttons"></div>
+            <a routerLink="edit/{{ post.id }}" class="btn btn-sm btn-primary"
+              ><span
+                class="iconify"
+                data-icon="octicon:pencil"
+                data-inline="false"
+              ></span
+              ><span class="d-none d-sm-inline ml-2">Edit</span>
+            </a>
+            <button
+              (click)="deletePost(post.id)"
+              class="btn btn-sm btn-danger btn-delete-post mx-3"
+            >
+              <span
+                class="iconify"
+                data-icon="octicon-trashcan"
+                data-inline="false"
+              ></span
+              ><span class="d-none d-sm-inline ml-2">Delete</span>
+            </button>
+          </td>
+        </tr>
+        <tr *ngIf="!posts">
+          <td colspan="4" class="text-center">
+            <span class="spinner-border spinner-border-lg align-center"></span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>

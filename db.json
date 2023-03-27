@@ -1,104 +1,49 @@
 {
   "posts": [
     {
-      "title": "Post numer 1",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores nulla laboriosam iste ducimus autem tenetur soluta voluptatibus iure cupiditate, quibusdam dolorum iusto sequi veritatis numquam, nobis, possimus vero expedita! Fuga?",
+      "title": " Which skills are required to use Angular?",
+      "text": "Do your applicants know that HTML, CSS, JavaScript, and (of course) Angular knowledge are vital skills required to use Angular? Are they aware that TypeScript and Angular Command Line Interface knowledge is also important, and can they show that they have the required skills to become a skilled addition to your team?",
       "id": 1
     },
     {
-      "id": 2,
-      "title": "Post numer 2",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores nulla laboriosam iste ducimus autem tenetur soluta voluptatibus iure cupiditate, quibusdam dolorum iusto sequi veritatis numquam, nobis, possimus vero expedita! Fuga?"
+      "title": "Which soft skills do Angular developers need?",
+      "text": "Some of the crucial soft skills required to be a skilled Angular developer include empathy, time management, communication, and attention to detail. Teamwork is also vital for Angular developers. Do your applicants have the right soft skills to join your organization?",
+      "id": 2
     },
     {
-      "id": 3,
-      "title": "Post numer 3",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores nulla laboriosam iste ducimus autem tenetur soluta voluptatibus iure cupiditate, quibusdam dolorum iusto sequi veritatis numquam, nobis, possimus vero expedita! Fuga?"
+      "title": "Describe some benefits of using Angular.",
+      "text": "Applicants should know that Angular's strength is that it enables developers to write clean code that’s easy to maintain. They should be aware that Angular provides reusable components and data binding and offers modules that make application creation smoother.",
+      "id": 3
     },
     {
-      "id": 4,
-      "title": "Post numer 4",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores nulla laboriosam iste ducimus autem tenetur soluta voluptatibus iure cupiditate, quibusdam dolorum iusto sequi veritatis numquam, nobis, possimus vero expedita! Fuga?"
+      "title": "Explain how Angular is different from AngularJS.",
+      "text": "Your candidates should know that while Angular uses TypeScript, AngularJS uses the JavaScript programming language. They should also know that Angular uses different components and directives, while AngularJS supports a model-view-controller (MVC) design. Do your candidates know that Angular supports mobile browsers while AngularJS doesn’t?",
+      "id": 4
     },
     {
-      "id": 5,
-      "title": "Post numer 5",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores nulla laboriosam iste ducimus autem tenetur soluta voluptatibus iure cupiditate, quibusdam dolorum iusto sequi veritatis numquam, nobis, possimus vero expedita! Fuga?"
+      "title": "Explain what Angular filters are.",
+      "text": "Do your applicants know that developers use Angular filters to filter items from various items in an object array or an array? Can they explain that the filter selects the subset of the items it takes from an array and returns the new array, displaying the item on the UI?",
+      "id": 5
     },
     {
-      "id": 6,
-      "title": "Post numer 6",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores nulla laboriosam iste ducimus autem tenetur soluta voluptatibus iure cupiditate, quibusdam dolorum iusto sequi veritatis numquam, nobis, possimus vero expedita! Fuga?"
+      "title": "Explain what a JIT compilation is.",
+      "text": "Experienced applicants should know that JIT is short for just-in-time. A JIT compilation is a process that developers use to compile code during the execution of a program rather than before. Applicants may know that JIT is also called dynamic compilation.",
+      "id": 6
     },
     {
-      "id": 7,
-      "title": "Post numer 7",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores nulla laboriosam iste ducimus autem tenetur soluta voluptatibus iure cupiditate, quibusdam dolorum iusto sequi veritatis numquam, nobis, possimus vero expedita! Fuga?"
+      "title": "Explain the difference between JIT and AOT compilations.",
+      "text": "While JIT works by downloading the compiler and compiling the code before displaying the output in the browser, AOT (ahead-of-time) will have already compiled the code during the application building process. Applicants should know that AOT loading is faster than JIT because compilation in JIT happens at runtime.",
+      "id": 7
     },
     {
-      "id": 8,
-      "title": "Post numer 8",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores nulla laboriosam iste ducimus autem tenetur soluta voluptatibus iure cupiditate, quibusdam dolorum iusto sequi veritatis numquam, nobis, possimus vero expedita! Fuga?"
+      "title": "Explain what services do in Angular.",
+      "text": "Can your applicants explain that services in Angular complete tasks that multiple components use? Services also complete operational tasks and ensure developers don’t have to rewrite code. Can your applicants give examples of the tasks that Angular services complete, including image fetching and database management?",
+      "id": 8
     },
     {
-      "id": 9,
-      "title": "Post numer 9",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores nulla laboriosam iste ducimus autem tenetur soluta voluptatibus iure cupiditate, quibusdam dolorum iusto sequi veritatis numquam, nobis, possimus vero expedita! Fuga?"
-    },
-    {
-      "id": 10,
-      "title": "Post numer 10",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores nulla laboriosam iste ducimus autem tenetur soluta voluptatibus iure cupiditate, quibusdam dolorum iusto sequi veritatis numquam, nobis, possimus vero expedita! Fuga?"
-    },
-    {
-      "id": 11,
-      "title": "Post numer 11",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores nulla laboriosam iste ducimus autem tenetur soluta voluptatibus iure cupiditate, quibusdam dolorum iusto sequi veritatis numquam, nobis, possimus vero expedita! Fuga?"
-    },
-    {
-      "id": 12,
-      "title": "Post numer 12",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores nulla laboriosam iste ducimus autem tenetur soluta voluptatibus iure cupiditate, quibusdam dolorum iusto sequi veritatis numquam, nobis, possimus vero expedita! Fuga?"
-    },
-    {
-      "id": 13,
-      "title": "Post numer 13",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores nulla laboriosam iste ducimus autem tenetur soluta voluptatibus iure cupiditate, quibusdam dolorum iusto sequi veritatis numquam, nobis, possimus vero expedita! Fuga?"
-    },
-    {
-      "id": 14,
-      "title": "Post numer 14",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores nulla laboriosam iste ducimus autem tenetur soluta voluptatibus iure cupiditate, quibusdam dolorum iusto sequi veritatis numquam, nobis, possimus vero expedita! Fuga?"
-    },
-    {
-      "id": 15,
-      "title": "Post numer 15",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores nulla laboriosam iste ducimus autem tenetur soluta voluptatibus iure cupiditate, quibusdam dolorum iusto sequi veritatis numquam, nobis, possimus vero expedita! Fuga?"
-    },
-    {
-      "id": 16,
-      "title": "Post numer 16",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores nulla laboriosam iste ducimus autem tenetur soluta voluptatibus iure cupiditate, quibusdam dolorum iusto sequi veritatis numquam, nobis, possimus vero expedita! Fuga?"
-    },
-    {
-      "id": 17,
-      "title": "Post numer 17",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores nulla laboriosam iste ducimus autem tenetur soluta voluptatibus iure cupiditate, quibusdam dolorum iusto sequi veritatis numquam, nobis, possimus vero expedita! Fuga?"
-    },
-    {
-      "id": 18,
-      "title": "Post numer 18",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores nulla laboriosam iste ducimus autem tenetur soluta voluptatibus iure cupiditate, quibusdam dolorum iusto sequi veritatis numquam, nobis, possimus vero expedita! Fuga?"
-    },
-    {
-      "id": 19,
-      "title": "Post numer 19",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores nulla laboriosam iste ducimus autem tenetur soluta voluptatibus iure cupiditate, quibusdam dolorum iusto sequi veritatis numquam, nobis, possimus vero expedita! Fuga?"
-    },
-    {
-      "title": "Post numer 20",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores nulla laboriosam iste ducimus autem tenetur soluta voluptatibus iure cupiditate, quibusdam dolorum iusto sequi veritatis numquam, nobis, possimus vero expedita! Fuga? Fuga?",
-      "id": 20
+      "title": "Explain what Promises are in Angular.",
+      "text": "Advanced Angular developers should know that Promises handle asynchronous events and emit one value at a time. Do they know that Promises execute straightaway after creation? Your candidates may explain that Promises differ from Observables, which handle several asynchronous events over a certain time.",
+      "id": 9
     }
   ]
 }

@@ -1,44 +1,47 @@
-<div class="p-4">
-<h1 *ngIf="isAddMode">Create Post</h1>
-<h1 *ngIf="!isAddMode">Edit Post</h1>
-<form [formGroup]="form" (ngSubmit)="onSubmit()">
-  <div class="form-row">
-    <div class="form-group col-5">
-      <label>Title</label>
-      <input
-        type="text"
-        formControlName="title"
-        class="form-control"
-        [ngClass]="{ 'is-invalid': submitted && f.title.errors }"
-      />
-      <div *ngIf="submitted && f.title.errors" class="invalid-feedback">
-        <div *ngIf="f.title.errors.required">Title is required</div>
+<div class="container justify-content-center">
+  <div class="p-4">
+    <h1 *ngIf="isAddMode">Create Post</h1>
+    <h1 *ngIf="!isAddMode">Edit Post</h1>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <div class="form-row">
+        <div class="form-group col-12">
+          <label>Title</label>
+          <input
+            type="text"
+            formControlName="title"
+            class="form-control"
+            [ngClass]="{ 'is-invalid': submitted && f.title.errors }"
+          />
+          <div *ngIf="submitted && f.title.errors" class="invalid-feedback">
+            <div *ngIf="f.title.errors.required">Title is required</div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="form-row">
-    <div class="form-group col-5">
-      <label>Text</label>
-      <textarea
-        type="text"
-        formControlName="text"
-        class="form-control"
-        [ngClass]="{ 'is-invalid': submitted && f.text.errors }"
-      ></textarea>
-      <div *ngIf="submitted && f.text.errors" class="invalid-feedback">
-        <div *ngIf="f.text.errors.required">Text is required</div>
+      <div class="form-row">
+        <div class="form-group col-12">
+          <label>Text</label>
+          <textarea
+            type="text"
+            formControlName="text"
+            class="form-control"
+            rows="15"
+            [ngClass]="{ 'is-invalid': submitted && f.text.errors }"
+          ></textarea>
+          <div *ngIf="submitted && f.text.errors" class="invalid-feedback">
+            <div *ngIf="f.text.errors.required">Text is required</div>
+          </div>
+        </div>
       </div>
-    </div>
+      <div class="form-group">
+        <button [disabled]="loading" class="btn btn-primary m-3">
+          <span
+            *ngIf="loading"
+            class="spinner-border spinner-border-sm mr-1"
+          ></span>
+          Save
+        </button>
+        <button routerLink="/posts" class="btn btn-danger">Cancel</button>
+      </div>
+    </form>
   </div>
-  <div class="form-group">
-    <button [disabled]="loading" class="btn btn-primary m-3">
-      <span
-        *ngIf="loading"
-        class="spinner-border spinner-border-sm mr-1"
-      ></span>
-      Save
-    </button>
-    <button routerLink="/posts" class="btn btn-danger">Cancel</button>
-  </div>
-</form>
 </div>

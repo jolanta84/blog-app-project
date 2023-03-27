@@ -6,6 +6,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { postRoutes } from './post.routes';
 import { PostListComponent } from './post-list/post-list.component';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [PostFormComponent, PostListComponent],
@@ -14,6 +15,7 @@ import { PostListComponent } from './post-list/post-list.component';
     ReactiveFormsModule,
     HttpClientModule,
     RouterModule.forChild(postRoutes),
+    NgxPaginationModule
   ],
   exports: [PostFormComponent, PostListComponent],
 })

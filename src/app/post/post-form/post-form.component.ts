@@ -7,7 +7,7 @@ import { PostService } from 'src/app/_services/post.service';
 
 @Component({
   selector: 'app-post-form',
-  templateUrl: './post-form.component.html'
+  templateUrl: './post-form.component.html',
 })
 export class PostFormComponent implements OnInit {
   public form!: FormGroup;
@@ -23,7 +23,7 @@ export class PostFormComponent implements OnInit {
     private postService: PostService
   ) {}
 
- public ngOnInit() {
+  public ngOnInit() {
     this.id = this.route.snapshot.params['id'];
     this.isAddMode = !this.id;
 
